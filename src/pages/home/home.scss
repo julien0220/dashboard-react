@@ -1,1 +1,26 @@
-.home {}
+@import '../../styles/variables.scss';
+
+.home {
+
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(180px, auto); //表示网格容器中的每一行都有一个最小高度为180像素，但可以根据内容的大小自动扩展。
+    // grid-auto-flow: dense;
+
+
+
+
+
+    .box {
+        // display: flex;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid $soft-bg;
+    }
+
+    .box1 {
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+}
