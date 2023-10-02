@@ -8,6 +8,7 @@ import { chartBoxConversion } from '../../../data.ts';
 import { chartBoxProduct } from '../../../data.ts';
 import { barChartBoxVisit, barChartBoxRevenue } from '../../../data.ts';
 import BarChartBox from "../../components/barChartBox/BarChartBox.tsx";
+import PieChartBox from "../../components/pieChartBox/PieChartBox.tsx";
 
 
 // 直接导出了一个函数，而不是一个组件？这里为什么可以这么用
@@ -24,7 +25,7 @@ const Home = () => {
                 <ChartBox {...chartBoxProduct} />
             </div>
             <div className="box box4">
-                <div />
+                <PieChartBox />
             </div>
             <div className="box box5">
                 <ChartBox {...chartBoxConversion} />
